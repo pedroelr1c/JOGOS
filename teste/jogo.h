@@ -8,3 +8,4 @@ void perguntas_1();
 void Errado(int *pt);
 
 void menu();
+

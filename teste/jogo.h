@@ -9,3 +9,4 @@ void Errado(int *pt);
 
 void menu();
 
+void RandomizarNumeros();

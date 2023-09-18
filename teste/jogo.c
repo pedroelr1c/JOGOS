@@ -1,5 +1,7 @@
 #include "jogo.h"
 
+#define limite 2
+
 char resp;
 int i=0;
 int j;
@@ -33,13 +35,9 @@ void menu(){
     }
 }
 
-void perguntas_1(){
+void RandomizarNumeros(int* al){
+    int igual;
     
-   int igual;
-    int *al=(int*)malloc(sizeof(int));
-    int limite=2;
-    int pontos=0;
-
     // Gerando numeros aleatorios que vai ser usado para escolher as perguntas.
     do{
         al[i] = rand() % 4; // A posição do vetor vai receber um número aleatorio entre 0 e 4.
@@ -53,6 +51,17 @@ void perguntas_1(){
             i++;
         }
     }while(i<limite);
+
+
+}
+
+void perguntas_1(){
+    
+   int igual;
+    int *al=(int*)malloc(sizeof(int));
+    int pontos=0;
+
+    RandomizarNumeros(al);
 
     i=0;
     

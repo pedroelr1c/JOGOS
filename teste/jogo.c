@@ -63,10 +63,12 @@ void perguntas_1(){
 
     RandomizarNumeros(al);
 
-    i=0;
+    
     
     do{
-        
+
+       i=0;
+
         printf("(%d)\n", al[i]); // testando escolha de numeros.
         switch(al[i]){
             case 0:
@@ -143,13 +145,16 @@ void perguntas_1(){
         }
         i++;
     }while(i<limite);
-   i=0;
+   
 
 free(al);
 
+RandomizarNumeros(al);
 
+i=0;
 
-    do{
+    do{  
+
         switch(al[i]){
                 case 0:
                     printf("PARA QUE SERVE A FUNÇAÕ FREE EM C?\n");
@@ -167,21 +172,25 @@ free(al);
 
                 case 1:
                     printf("SEM PERGUNTAS AINDA\n");
+                    scanf("%c",&resp);
                     break;
 
                 case 2:
                     printf("SEM PERGUNTAS AINDA\n");
+                    scanf("%c",&resp);
                     break;
 
                 case 3:
                     printf("SEM PERGUNTAS AINDA\n");
+                    scanf("%c",&resp);
                     break;
 
                 case 4:
                     printf("SEM PERGUNTAS AINDA\n");
+                    scanf("%c",&resp);
                     break;
             }
-    
+        i++;    
     }while(i<limite);
    
 }
